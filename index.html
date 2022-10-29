@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="mainText">
+          <h1>Learn to code by watching others</h1>
+
+          <p class="fristText">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="inputBody">
+          <div class="tryBox">
+            <div class="tryText">
+              <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <form action="#" name="myForm" onsubmit="return valid()">
+              <div class="inputContainer">
+                <img class="inputImg sup" src="images/icon-error.svg" alt="" />
+                <input
+                  class="input"
+                  type="text"
+                  name="Fname"
+                  placeholder="First Name"
+                />
+                <div class="errorMsg">First Name cannot be empty</div>
+              </div>
+
+              <div class="inputContainer">
+                <img class="inputImg sup" src="images/icon-error.svg" alt="" />
+                <input
+                  class="input"
+                  type="text"
+                  name="Lname"
+                  placeholder="Last Name"
+                />
+                <div class="errorMsg supe">Last Name cannot be empty</div>
+              </div>
+
+              <div class="inputContainer">
+                <img class="inputImg" src="images/icon-error.svg" alt="" />
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                />
+                <div class="errorMsg">Looks like this is not an email</div>
+              </div>
+
+              <div class="inputContainer">
+                <img class="inputImg sup" src="images/icon-error.svg" alt="" />
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  id=""
+                  placeholder="Password"
+                />
+                <div class="errorMsg">Password cannot be empty</div>
+              </div>
+
+              <button type="submit" value="submit">
+                Claim your free trial
+              </button>
+            </form>
+            <p>
+              By clicking the button, you are agreeing to our<span>
+                Terms and Services</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Osauyi</a>.
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

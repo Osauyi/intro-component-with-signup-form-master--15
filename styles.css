@@ -1,0 +1,241 @@
+:root{
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%) ;
+  --Grayish-Blue: hsl(246, 25%, 77%);
+  --white: #ffff;
+  --box-shadow: 0px 7px hsla(249, 10%, 26%, 0.351) ;
+}
+
+body{
+  background-color: var(--Red);
+  background-image: url(images/bg-intro-mobile.png);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 5rem 1.25rem 0rem 1.25rem ;
+}
+
+h1{
+  color: var(--white);
+  font-weight: 600;
+}
+
+p{
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.fristText{
+  padding: 0 1.375rem;
+}
+
+/******** purple boxxxx */
+
+.tryBox{
+  background-color: var(--Blue);
+  border-radius: 0.5rem;
+  padding: 0.625rem 0;
+    box-shadow: var(--box-shadow);
+
+}
+
+.tryBox span{
+  font-weight: 600;
+  color: var(--white);
+}
+
+.tryText{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.tryText p{
+  color: var(--Grayish-Blue);
+}
+
+
+/*********input box */
+.inputBox{
+  background-color: var(--white);
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  margin-top: 1.25rem;
+    box-shadow: var(--box-shadow);
+
+}
+
+.input{
+  min-width: 17.5rem;
+  padding-left: 1.25rem;
+  /* padding-right: 25px; */
+  min-height: 2.9rem;
+  border-radius: 0.3125rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-top: 0.85rem;
+  border: 0.0625rem solid;
+  border-color: var( --Grayish-Blue);
+  /* background: url(/images/icon-error.svg) no-repeat right; */
+  /* background-position: 0px; */
+}
+
+
+
+button{
+  color: var(--white);
+  background-color: var(--Green);
+  min-width: 19.0625rem;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 0.9375rem 0;
+  border-radius: 0.3125rem;
+  margin-top: 0.85rem;
+  border: none;
+  box-shadow: 0px -3px  hsla(249, 10%, 26%, 0.351) inset;
+}
+
+button:hover{
+  background-color:  hsla(154, 59%, 51%, 0.634);;
+}
+
+.inputBox p{
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+}
+
+.inputBox span{
+  color: var(--Red);
+  font-weight: 600;
+}
+
+
+
+.errorMsg{
+ color: #cc0033;
+  display: none;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px 0 0;
+  min-width: 300px;
+  text-align: right;
+  
+}
+
+.errorMsgSHOWN {
+ color: #cc0033;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px 0 0;
+  min-width: 300px;
+  text-align: right;
+}
+
+.inputContainer{
+  position: relative;
+}
+
+.inputImg{
+  display: none;
+  text-align: right;
+  position: absolute;
+  top: 26px;
+  left: 267px;
+}
+
+  .inputImgSHOWN{
+  display: block;
+  text-align: right;
+  position: absolute;
+  top: 26px;
+  left: 267px;
+}
+
+
+footer{
+  margin-top: 2.5rem;
+}
+
+
+@media  screen and (min-width:  1000px) {
+  body{
+    background-image: url(images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  margin: 80px 150px 0px 150px ;
+
+  }
+
+  h1{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  .fristText{
+    padding: 0;
+  }
+
+  .container{
+    display: flex;
+    margin-top: 135px;
+    /* margin: 0 auto; */
+  }
+
+  .mainText{
+    align-self: center;
+    width: 45%;
+    text-align: left;
+  }
+
+  .tryBox{
+    padding: 4px 0;
+    margin: 0;
+  }
+
+  .tryText{
+  width: 80%;
+  }
+
+  .inputBody{
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .input{
+    width: 85%;
+  }
+
+  button{
+    width: 90%;
+  }
+
+  .inputBox{
+    padding: 1.875rem 0;
+  }
+
+  .inputBox p{
+  
+  font-size: 0.6rem;
+}
+
+.errorMsgSHOWN{
+    min-width: 27.1875rem;
+}
+.errorMsg{
+  min-width: 27.1875rem;
+}
+
+.inputImg{
+  left: 26.25rem;
+}
+
+.inputImgSHOWN{
+  left: 26.25rem
+}
+
+
+}
